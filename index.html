@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>現場とチーム見える化アプリ</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>現場とチーム見える化アプリ</h1>
+    <p>社員の仕事の習得状況を見える化<br>
+        人員配置やシフト作成をサポートします。
+    </p>
+    <nab>
+        <button id="staff-button">スタッフ一覧</button>
+        <button id="search-button">業務から探す</button>
+        <button id="manage-button">業務管理</button>
+    </nab>
+    <selection id="staff-page">
+        <h2>スタッフ一覧</h2>
+        <button id="add-employee-button">+スタッフの追加</button>
+        <div id="employee-list"></div>
+    </selection>
+    <section id="search-page"hidden>
+        <h2>業務から探す</h2>
+        <p>担当できるスタッフを検索します</p>
+        <select id="skill-search"></select>
+        <div id="search-results"></div>
+    </section>
+    <section id="manage-page"hidden>
+        <h2>業務管理</h2>
+        <p>業務や習得項目を追加・編集します</p> 
+        <button id="add-skill-button">+業務を追加</button>
+        <button id="show-skills-button">業務一覧を見る</button>
+        <div id="skills-list"hidden></div>
+    </section>   
+    <button id="home-button">🏠 ホームへ戻る</button>        
+    <script src="script.js"></script>
